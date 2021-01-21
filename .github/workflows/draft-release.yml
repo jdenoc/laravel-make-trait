@@ -42,8 +42,6 @@ jobs:
           body: |
             ${{ env.RELEASE_MESSAGE }}
 
-            ---
-            See [here](https://github.com/jdenoc/money-tracker/blob/${{ env.RELEASE_NAME }}/README.md#prod-updates) for comprehensive instructions.
           draft: true
           prerelease: true
 
