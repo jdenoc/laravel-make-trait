@@ -4,7 +4,7 @@
     "homepage": "https://github.com/jdenoc/laravel-make-trait",
     "type": "library",
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "illuminate/support": "^6.0"
     },
     "require-dev": {
