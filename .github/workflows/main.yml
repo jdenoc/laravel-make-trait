@@ -35,15 +35,9 @@ jobs:
 
       - name: Run tests
         run: |
+          pwd
           ls -lah
           cat composer.lock
-          ls -lah vendor
-          ls -lah vendor/bin
-          ls -lah vendor/orchestra
-          ls -lah vendor/orchestra/testbench-core
-          ls -lah vendor/orchestra/testbench-core/laravel
-          ls -lah vendor/orchestra/testbench-core/laravel/bootstrap
-          ls -lah vendor/orchestra/testbench-core/laravel/bootstrap/cache
           vendor/bin/phpunit
 
   notification:
