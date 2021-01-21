@@ -35,9 +35,21 @@ jobs:
 
       - name: Run tests
         run: |
-          pwd
-          ls -lah
-          cat composer.lock
+          echo "whoami"
+          whoami
+          echo "groups"
+          groups
+          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap"
+          ll vendor/orchestra/testbench-core/laravel/bootstrap
+          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap/cache"
+          ll vendor/orchestra/testbench-core/laravel/bootstrap/cache
+          echo "chown -R `whoami` vendor/orchestra/testbench-core/laravel/bootstrap/*"
+          chown -R `whoami` vendor/orchestra/testbench-core/laravel/bootstrap/*
+          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap"
+          ll vendor/orchestra/testbench-core/laravel/bootstrap
+          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap/cache"
+          ll vendor/orchestra/testbench-core/laravel/bootstrap/cache
+          echo "vendor/bin/phpunit"
           vendor/bin/phpunit
 
   notification:
