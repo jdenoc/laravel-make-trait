@@ -1,0 +1,34 @@
+{
+    "name": "jdenoc/laravel-make-trait",
+    "description": "artisan make:trait",
+    "homepage": "https://github.com/jdenoc/laravel-make-trait",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jdenoc\\MakeTrait\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jdenoc\\MakeTrait\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Jdenoc\\MakeTrait\\MakeTraitServiceProvider"
+            ]
+        }
+    }
+}
