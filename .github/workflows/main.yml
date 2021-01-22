@@ -33,8 +33,11 @@ jobs:
           php_version: 7.2
           version: 1
 
-      - name: Run tests
-        run: vendor/bin/phpunit
+      - uses: php-actions/phpunit@v2
+        with:
+          php_version: 7.2
+          version: 8
+          configuration: phpunit.xml.dist
 
   notification:
     runs-on: ubuntu-latest
