@@ -39,16 +39,16 @@ jobs:
           whoami
           echo "groups"
           groups
-          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap"
-          ll vendor/orchestra/testbench-core/laravel/bootstrap
-          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap/cache"
-          ll vendor/orchestra/testbench-core/laravel/bootstrap/cache
+          echo "ls -al vendor/orchestra/testbench-core/laravel/bootstrap"
+          ls -al vendor/orchestra/testbench-core/laravel/bootstrap
+          echo "ls -al vendor/orchestra/testbench-core/laravel/bootstrap/cache"
+          ls -la vendor/orchestra/testbench-core/laravel/bootstrap/cache
           echo "chown -R `whoami` vendor/orchestra/testbench-core/laravel/bootstrap/*"
           chown -R `whoami` vendor/orchestra/testbench-core/laravel/bootstrap/*
-          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap"
-          ll vendor/orchestra/testbench-core/laravel/bootstrap
-          echo "ll vendor/orchestra/testbench-core/laravel/bootstrap/cache"
-          ll vendor/orchestra/testbench-core/laravel/bootstrap/cache
+          echo "ls -la vendor/orchestra/testbench-core/laravel/bootstrap"
+          ls -la vendor/orchestra/testbench-core/laravel/bootstrap
+          echo "ls -la vendor/orchestra/testbench-core/laravel/bootstrap/cache"
+          ls -la vendor/orchestra/testbench-core/laravel/bootstrap/cache
           echo "vendor/bin/phpunit"
           vendor/bin/phpunit
 
