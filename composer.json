@@ -3,6 +3,12 @@
     "description": "artisan make:trait",
     "homepage": "https://github.com/jdenoc/laravel-make-trait",
     "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "artisan",
+        "trait"
+    ],
     "require": {
         "php": "^7.2",
         "illuminate/support": "^6.0"
