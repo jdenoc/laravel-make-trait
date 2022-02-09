@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.ref }}
+          fetch-depth: 0
 
       - id: set-release-name
         run: echo "RELEASE_NAME=$(git describe --tags)" >> $GITHUB_ENV
@@ -31,6 +31,9 @@ jobs:
           echo "$message" >> $GITHUB_ENV
           echo 'GIT' >> $GITHUB_ENV
 
+      - id: set-previous-release-name
+        run: echo "PREVIOUS_RELEASE_NAME=$(git describe --abbrev=0 --tags $(git rev-list --tags --skip=1 --max-count=1))" >> $GITHUB_ENV
+
       - name: Create Draft Release
         id: create-draft-release
         uses: actions/create-release@v1
@@ -41,7 +44,8 @@ jobs:
           release_name: ${{ github.ref }}
           body: |
             ${{ env.RELEASE_MESSAGE }}
-
+            
+            **Full Changelog**: https://github.com/jdenoc/laravel-make-trait/compare/${{ env.PREVIOUS_RELEASE_NAME }}...${{ env.RELEASE_NAME }}
           draft: true
           prerelease: true
 
