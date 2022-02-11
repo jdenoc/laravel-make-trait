@@ -27,6 +27,7 @@ vendor/bin/phpunit --stop-on-failure
 - 7.2
 - 7.3
 - 7.4
+- 8.0
 
 ### Laravel Version Support
 - Laravel 7.0
