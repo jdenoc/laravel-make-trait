@@ -45,6 +45,7 @@ jobs:
           body: |
             ${{ env.RELEASE_MESSAGE }}
             
+            ---
             **Full Changelog**: https://github.com/jdenoc/laravel-make-trait/compare/${{ env.PREVIOUS_RELEASE_NAME }}...${{ env.RELEASE_NAME }}
           draft: true
           prerelease: true
