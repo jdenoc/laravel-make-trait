@@ -24,12 +24,13 @@ vendor/bin/phpunit --stop-on-failure
 ```
 
 ### PHP Version Support
-- 7.2
 - 7.3
 - 7.4
 - 8.0
 
 ### Laravel Version Support
+- Laravel 8.0
 - Laravel 7.0
+  - Use version [1.1.1](https://github.com/jdenoc/laravel-make-trait/tree/1.1.1)
 - Laravel 6.0
   - Use version [1.0.1](https://github.com/jdenoc/laravel-make-trait/tree/1.0.1)
