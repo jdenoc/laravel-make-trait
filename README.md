@@ -20,17 +20,17 @@ php artisan make:trait TraitName
 ## Testing
 
 ```bash
-vendor/bin/phpunit --stop-on-failure
+vendor/bin/phpunit
 ```
 
 ### PHP Version Support
-- 7.3
-- 7.4
 - 8.0
 
 ### Laravel Version Support
-- Laravel 8.0
-- Laravel 7.0
+- Laravel 9.x
+- Laravel 8.x
+  - Use version [2.0.0](https://github.com/jdenoc/laravel-make-trait/tree/2.0.0)
+- Laravel 7.x
   - Use version [1.1.1](https://github.com/jdenoc/laravel-make-trait/tree/1.1.1)
-- Laravel 6.0
+- Laravel 6.x
   - Use version [1.0.1](https://github.com/jdenoc/laravel-make-trait/tree/1.0.1)
